@@ -279,27 +279,55 @@ li>button{
     justify-content: center;
 }
 .option-btn button{
-    display: flex;
     align-items: center;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 20px;
     border:0;
-    text-align: start;
+    text-align: center;
     border-radius: 50px;
     background: #FFF;
     font-size: 15px;
     font-weight: 600;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 .option-btn img {
     width: 30px;
     margin-right: 10px;
 }
 .option-btn button:hover{
-    border-width: 2px;
-    border: #F948B2;
+    border: 2px solid #FF42A5;
     color: #F948B2;
 }
+
+/* Footer section added */
+footer {
+    /* height: 50vh; */
+    text-align: center;
+    background: #0B0223;
+    color: #FFF;
+    padding-top:100px;
+    padding-bottom: 100px;
+    
+}
+.foot .nav-title{
+    padding-bottom: 50px;
+}
   
+.foot ul {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    padding-bottom: 50px;
+}
+  
+.foot ul > li {
+    list-style: none;
+    text-align: center; 
+}
+li>img{
+    width:20px;
+    margin: 0 20px;
+}
   
 
 
@@ -417,7 +445,61 @@ li>button{
         margin-bottom: 110px;
         margin-left:0;
     }
+
+    .option{
+        margin: 100px 50px;
+    }
+    .option-btn{
+        display: flex;
+        flex-basis:50%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left:0;
+    }
+
+    .option-btn button{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px 10px;
+        /* margin: 5px; */
+        margin: 0;
+        border:0;
+        text-align: start;
+        border-radius: 50px;
+        background: #FFF;
+        font-size: 10px;
+        font-weight: 600;
+        flex-basis: 10% ; 
+    }
     
+    footer {
+        height: 100vh;
+        text-align: center;
+        padding-top:50px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    .foot .nav-title{
+        display: inline-block;
+        padding-bottom: 50px;
+    }
+      
+    .foot ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        justify-content: center; 
+        padding-bottom: 50px;
+        padding: 0 20px;
+    }
+      
+    .foot ul > li {
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        text-align: center; 
+    }
       
       
     
@@ -507,18 +589,22 @@ li>button{
         height: 250px;
         position: absolute;
         margin-left:80px;
-      }
-      #two{
+    }
+    #two{
         width: 150px;
         height: 150px;
         position: relative;
         right:150px;
         top: 40px;
-      }
-      .play-description{
+    }
+    .play-description{
         text-align: center;
         margin-bottom: 110px;
         margin-left:0;
+    }
+    .option-btn button {
+        margin: 0;
+        flex-basis: 50%; /* Two buttons in a row on smaller screens */
       }
 
 }
